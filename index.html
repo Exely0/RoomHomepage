@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./tailwindstyle.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700&display=swap" rel="stylesheet"> 
+    
+</head>
+
+<body class="min-h-screen flex justify-center font-league-spartan">
+
+    <div id="overlay" class="hidden fixed top-0 left-0 w-full h-full bg-[rgba(0,0,0,0.5)] z-10"></div>
+
+    <main class="grid grid-cols-1 max-w-[375px] md:grid-cols-[432px_432px_144px_432px] md:gap-0 md:grid-rows-[2fr_1fr] md:max-w-[1440px] md:place-items-stretch">
+
+       
+        <div id="mobile-menu" class="hidden sticky z-20 bg-white top-0 h-28 items-center justify-between px-5 text-sm font-semibold">
+            <div id="close-mobile-menu" class="cursor-pointer w-9 h-9 flex items-center justify-center">
+                <img src="room-homepage-master/images/icon-close.svg" alt="croix">
+            </div>
+            <div class="flex gap-4">
+                <a href="">home</a>
+                <a href="">shop</a>
+                <a href="">about</a>
+                <a href="">contact</a>
+            </div>
+        </div>
+
+        <!--image principale-->
+
+        <div class="relative md:row-[1] md:col-[1/3]">            
+            <img id="img1-mobile" class="md:hidden" src="room-homepage-master/images/mobile-image-hero-1.jpg" alt="table and flowers">
+            <img id="img2-mobile" class="hidden" src="room-homepage-master/images/mobile-image-hero-2.jpg" alt="table and flowers">
+            <img id="img3-mobile" class="hidden" src="room-homepage-master/images/mobile-image-hero-3.jpg" alt="table and flowers">
+
+            <img id="img1-desk" class="hidden md:block w-full" src="room-homepage-master/images/desktop-image-hero-1.jpg" alt="table and flowers">
+            <img id="img2-desk" class="hidden w-full" src="room-homepage-master/images/desktop-image-hero-2.jpg" alt="table and flowers">
+            <img id="img3-desk" class="hidden w-full" src="room-homepage-master/images/desktop-image-hero-3.jpg" alt="table and flowers">
+
+            <div class="md:hidden absolute bottom-0 right-0 flex w-24 h-12 bg-black text-white justify-around items-center text-xl">
+                <div id="left-arrow" class="hover:bg-slate-700 z-10 flex justify-center items-center self-stretch text-center grow cursor-pointer">
+                    <p>&#60;</p>
+                </div>
+                <div id="right-arrow" class="hover:bg-slate-700 z-10 flex justify-center items-center self-stretch text-center grow cursor-pointer">
+                    <p>&#62;</p>
+                </div>
+            </div>
+
+            <div id="open-mobile-menu" class="md:hidden cursor-pointer absolute top-10 left-5 z-10">
+                <img src="room-homepage-master/images/icon-hamburger.svg" alt="hamburger">
+            </div>
+            <div class="md:hidden absolute top-8 w-full text-center text-white text-xl">
+                room
+            </div>
+            <!--desktop menu-->
+            <div class="hidden md:flex absolute font-bold top-12 left-12 text-white items-center justify-center gap-7">
+                <h1 class="mr-5 text-2xl pb-1">
+                    <p>Room</p>
+                </h1>
+                <a href="">
+                    home
+                </a>
+                <a href="">
+                    shop
+                </a>
+                <a href="">
+                    about
+                </a>
+                <a href="">
+                    contact
+                </a>
+            </div>
+        </div>
+
+        <!--fleches version desktop-->
+        <div class="hidden h-16 md:col-[3] md:row-[1] z-10 self-end bg-black text-white md:flex md:justify-center items-center">
+            <div id="desk-left-arrow" class="hover:bg-slate-700 z-10 flex justify-center items-center self-stretch grow text-center cursor-pointer">
+                <p>&#60;</p>
+            </div>
+            <div id="desk-right-arrow" class="hover:bg-slate-700 z-10 flex justify-center items-center self-stretch grow text-center cursor-pointer">
+                <p>&#62;</p>
+            </div>
+        </div>
+
+        <!--paragraphe1-->
+
+        <div class="bg-white px-5 py-10 space-y-5 md:row-[1] md:col-[3/span2] md:px-16 md:flex md:flex-col md:justify-center md:items-start">
+            <h1 class="text-3xl md:text-4xl font-bold">
+                Discover innovative ways to decorate
+            </h1>
+            <p  id="text1" class=" text-gray-700">
+                We provide unmatched quality, comfort, and style for property owners across the country.
+                 Our experts combine form and function in bringing your vision to life. Create a room in your own
+                 style with our collection and make your property a reflection of you and what you love.
+            </p>
+            <p id="text2" class="hidden text-gray-700">
+                With stores all over the world, it's easy for you to find furniture for your home or place of business. 
+                Locally, we’re in most major cities throughout the country. Find the branch nearest you using our 
+                store locator. Any questions? Don't hesitate to contact us today.
+            </p>
+            <p id="text3" class="hidden text-gray-700">
+                Our modern furniture store provide a high level of quality. Our company has invested in advanced technology 
+                to ensure that every product is made as perfect and as consistent as possible. With three decades of 
+                experience in this industry, we understand what customers want for their home and office.
+            </p>
+            <div class="flex gap-5 items-center">
+                <div class="text-lg uppercase tracking-widest font-semibold">
+                    <a href="">Shop now</a>
+                </div>
+                <div>
+                    <img src="room-homepage-master/images/icon-arrow.svg" alt="arrow">
+                </div>
+            </div>
+        </div>
+
+        <!--image 2-->
+
+        <div class="md:row-[2] md:col-[1]">
+            <img class="w-full h-full" src="room-homepage-master/images/image-about-dark.jpg" alt="dark room">
+        </div>
+
+        <!--paragrphe3-->
+
+        <div class="bg-white px-5 py-10 space-y-5 md:row-[2] md:col-[2/4] md:px-10 md:flex md:flex-col md:justify-center md:items-start">
+            <h1 class="text-xl font-semibold uppercase tracking-wider">
+                About our furniture
+            </h1>
+            <p class="text-gray-700">
+                Our multifunctional collection blends design and
+                    function to suit your individual taste. Make each room unique, or pick a 
+                    cohesive theme that best express your interests and what inspires you.
+                     Find the furniture pieces you need, from traditional to contemporary
+                      styles or anything in between. Product specialists are available to 
+                      help you create your dream space. 
+            </p>
+        </div>
+
+        <!--Image4-->
+
+        <div class="md:row-[2] md:col-[4]">
+            <img class="w-full h-full" src="room-homepage-master/images/image-about-light.jpg" alt="white room">
+        </div>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
